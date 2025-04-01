@@ -1,0 +1,61 @@
+/* Estilos gerais */
+:root {
+    --cor-cabecalho: #004d25; /* Verde escuro para o Coritiba */
+    --cor-texto: #fff;
+    --cor-fundo: #006437; /* Verde tradicional do Coritiba */
+    --cor-destaque: #d9d9d9; /* Cinza claro */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: var(--cor-cabecalho);
+    padding: 2em;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Imagem */
+.imagem {
+    width: 150px;
+}
+
+/* Título */
+.titulo {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--cor-texto);
+    text-transform: uppercase;
+}
+
+/* Frase */
+.frase {
+    font-size: 1.2em;
+    font-style: italic;
+    color: var(--cor-destaque);
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
